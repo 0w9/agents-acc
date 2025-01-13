@@ -5,101 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Agents for Everyone">
   <title>Agents for Everyone</title>
-  <style>
-    h1, h2, h3, h4, h5, strong {
-      color: #000;
-    }
-    a, a:visited {
-      color: blue;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    hr {
-      border: none;
-      border-top: 1px solid #ccc;
-      margin: 20px 0;
-    }
-    .content {
-      margin-top: 50px; /* Reduced from 70px */
-    }
-    .text-2xl {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-bottom: 0.5rem;
-    }
-    .text-xl {
-      font-size: 1.25rem;
-      font-weight: bold;
-      margin-bottom: 0.5rem;
-    }
-    ul {
-      padding-left: 1.5rem;
-      list-style-type: disc;
-      margin-bottom: 1.5rem;
-    }
-    .section {
-      margin-bottom: 20px; /* Reduced from 30px */
-    }
-    h2 {
-      margin-bottom: 10px; /* Reduced space after headers */
-    }
-    p {
-      margin-bottom: 15px; /* Adjust spacing after paragraphs */
-    }
-    .cta {
-      margin: 20px 0;
-      font-size: 18px;
-      font-weight: bold;
-      color: blue;
-    }
-    .cta a {
-      color: blue;
-    }
-    img {
-      display: block;
-      margin: 0 auto;
-      max-width: 100%;
-      height: auto;
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <div class="content">
-    <img src="./banner.jpg" alt="Banner Image" />
+<body class="bg-gray-100 text-gray-800 font-sans">
 
-    <h2>tl;dr</h2>
-    <p>
-      The past weeks have shown how powerful AI agents are and that they will help us in most of our businesses and daily life. 
-      But they still require a lot of external access, like good APIs. This is an open approach to solving this.
-    </p>
+  <!-- Wrapper -->
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
 
-    <h2>basics of agents/acc</h2>
-    <p>
-      Agents should be able to interact with most of the world in the name of their human representative.
-    </p>
-    <p>
-      The web is currently super restrictive to agents. Every new platform needs to be manually integrated, and every action programmed. This needs to be reversed.
-    </p>
+    <!-- Banner Section -->
+    <div class="flex justify-center mb-8">
+      <img src="./banner.jpg" alt="Banner Image" class="rounded-lg shadow-md w-full max-w-3xl">
+    </div>
 
-    <h2>agent identification</h2>
-    <p>
-      The core of an agents/acc is an identification method. With APIs, we currently use account-bound bearer tokens, OAuth, or similar methods. 
-      This would require an account on each platform the agent interacts with. Instead, we will use a more decentralized authentication, 
-      in which the agent identifies its operator to the service, tool, or site it’s using. 
-    </p>
+    <!-- Content Section -->
+    <div class="space-y-10">
+      
+      <!-- tl;dr Section -->
+      <section class="bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">tl;dr</h2>
+        <p class="text-gray-700 leading-relaxed">
+          The past weeks have shown how powerful AI agents are and that they will help us in most of our businesses and daily life. 
+          But they still require a lot of external access, like good APIs. This is an open approach to solving this.
+        </p>
+      </section>
 
-    <hr />
+      <!-- Basics Section -->
+      <section class="bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">basics of agents/acc</h2>
+        <p class="text-gray-700 leading-relaxed">
+          Agents should be able to interact with most of the world in the name of their human representative.
+        </p>
+        <p class="text-gray-700 leading-relaxed mt-3">
+          The web is currently super restrictive to agents. Every new platform needs to be manually integrated, and every action programmed. This needs to be reversed.
+        </p>
+      </section>
 
-    <h2>organization & contact</h2>
-    <p>
-      If you want to add your own ideas here, feel free to add a PR. The whole site is open for everyone on 
-      <a href="https://github.com/0w9/agents-acc/">Github</a>. You can also 
-      <a href="mailto:lennard@beachcode.de">email</a> me, follow my 
-      <a href="https://x.com/lennardeth">twitter</a>, or book a 
-      <a href="http://cal.com/beachcode">call</a> with me. Happy to chat and invite more people to this project.
-    </p>
+      <!-- Agent Identification Section -->
+      <section class="bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">agent identification</h2>
+        <p class="text-gray-700 leading-relaxed">
+          The core of an agents/acc is an identification method. With APIs, we currently use account-bound bearer tokens, OAuth, or similar methods. 
+          This would require an account on each platform the agent interacts with. Instead, we will use a more decentralized authentication, 
+          in which the agent identifies its operator to the service, tool, or site it’s using.
+        </p>
+      </section>
+
+      <!-- Organization & Contact Section -->
+      <section class="bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">organization & contact</h2>
+        <p class="text-gray-700 leading-relaxed">
+          If you want to add your own ideas here, feel free to add a PR. The whole site is open for everyone on 
+          <a href="https://github.com/0w9/agents-acc/" class="text-blue-600 hover:underline">Github</a>. You can also 
+          <a href="mailto:lennard@beachcode.de" class="text-blue-600 hover:underline">email</a> me, follow my 
+          <a href="https://x.com/lennardeth" class="text-blue-600 hover:underline">twitter</a>, or book a 
+          <a href="http://cal.com/beachcode" class="text-blue-600 hover:underline">call</a> with me. Happy to chat and invite more people to this project.
+        </p>
+      </section>
+
+    </div>
   </div>
+
 </body>
 </html>
