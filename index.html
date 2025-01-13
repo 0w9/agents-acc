@@ -43,7 +43,7 @@
         <p class="leading-relaxed">
           The core of an agents/acc is an identification method. With APIs, we currently use account-bound bearer tokens, OAuth, or similar methods. 
           This would require an account on each platform the agent interacts with. Instead, we will use a more decentralized authentication, 
-          in which the agent identifies its operator to the service, tool, or site it’s using.
+          in which the agent identifies its operator to the service, tool, or site it's using. This allows to sign usage agreements.
         </p>
       </section>
 
@@ -59,21 +59,22 @@
 
           <ul class="list-disc pl-5 space-y-2">
             <li>
-              Name and description of the action is described. 
+              <b>Name</b> and <b>description</b> of the action is described. 
             </li>
 
             <li>
-              The purpose of the action is also explained to the agent. This will help the agent if the description is not
+              The <b>purpose</b> of the action is also explained to the agent. This will help the agent if the description is not
               enough of indication for it to take the action.
             </li>
 
             <li>
-              Requirements are presented as a key-value pair with the name and a nature language description of it. Basically like OpenAPI 
-              docs but made for agents.
+              <b>Requirements</b> are presented as a key-value pairs with the name, type and a nature language description of it. Basically like OpenAPI 
+              docs but made for agents. It can be parsed by an agent and filled in like a OpenAI function.
             </li>
 
             <li>
-              Restrictions and cost. Once an agent uses the backend it's forced into signing the agreement and starts a subscription. 
+              <b>Restrictions</b> and <b>pricing</b>. Once an agent uses the backend it's forced into signing the agreement and starts a subscription. For this basic 
+              crypto can be used, similar to signing a transaction -- seeing an agent's action as transaction with a contract.
             </li>
           </ul>
       </section>
@@ -82,7 +83,8 @@
       <section>
         <h2 class="text-2xl font-bold mb-3">enforcement</h2>
         <p class="leading-relaxed">
-          Adding content here.
+          Trough the signed agreement and pricing approach being handled in crypto the enforcement is not yet needed. The operator has to accept the agreement once and then 
+          gives the agent to approve or reject "transactions". A big question is if this is really handled on a blockchain or just takes inspiration from the web3 space.
         </p>
       </section>
 
