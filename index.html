@@ -50,6 +50,36 @@
         </p>
       </section>
 
+      <!-- Prompt Actions -->
+      <section>
+        <h2 class="text-2xl font-bold mb-3">action prompts</h2>
+        <p class="leading-relaxed">
+          With a concept of "action prompt" we can create an easy format for agents to read. Instead of developers having to code integrations for the platforms the agent 
+          should use, the creators of agents can just provide an url to the service. The agent then can parse the "action prompts" and take actions on them. These prompts 
+          follow a format like this:
+
+          <li>
+            <ul>
+              Name and description of the action is described. 
+            </ul>
+
+            <ul>
+              The purpose of the action is also explained to the agent. This will help the agent if the description is not
+              enough of indication for it to take the action.
+            </ul>
+
+            <ul>
+              Requirements are presented as a key-value pair with the name and a nature language description of it. Basically like OpenAPI 
+              docs but made for agents.
+            </ul>
+
+            <ul>
+              Restrictions and cost
+            </ul>
+          </li>
+        </p>
+      </section>
+
       <!-- Organization & Contact Section -->
       <section>
         <h2 class="text-2xl font-bold mb-3">organization & contact</h2>
